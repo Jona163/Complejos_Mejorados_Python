@@ -106,3 +106,4 @@ while repetir:
         if resultado is not None:
             print(f"{Fore.GREEN}El resultado es {resultado}")
             graficar_cartesiano(complejo1, complejo2, resultado)
+            graficar_polar(complejo1, complejo2, resultado)
