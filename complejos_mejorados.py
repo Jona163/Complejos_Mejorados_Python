@@ -119,3 +119,19 @@ while repetir:
         print(f"{Fore.GREEN}El resultado es {resultado}")
         graficar_cartesiano(complejo, complejo, resultado)
         graficar_polar(complejo, complejo, resultado)
+
+   elif case == 6:
+        # Ingresar potencia para operación de potencia de i
+        a = int(input(f"{Fore.YELLOW}Ingresa la potencia a elevar a i: {Style.RESET_ALL}"))
+        print(f"{Fore.GREEN}Numero ingresado i^{a}")
+        b = a % 4
+        if b == 0:
+            print(f"{Fore.GREEN}El resultado es 1")
+        elif b == 1:
+            print(f"{Fore.GREEN}El resultado es i")
+        elif b == 2:
+            print(f"{Fore.GREEN}El resultado es -1")
+        elif b == 3:
+            print(f"{Fore.GREEN}El resultado es -i")
+        graficar_cartesiano(b, 0, b)
+        graficar_polar(b, 0, b)
