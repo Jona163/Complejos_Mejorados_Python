@@ -22,7 +22,7 @@ def menu():
     print(f"{Fore.YELLOW}8. SALIR")
     print(Style.RESET_ALL)
 
- Función para realizar operaciones entre números complejos
+ #Función para realizar operaciones entre números complejos
 def realizar_operacion(complejo1, complejo2, operacion):
     if operacion == 1:
         resultado = complejo1 + complejo2
