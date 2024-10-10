@@ -135,3 +135,10 @@ while repetir:
             print(f"{Fore.GREEN}El resultado es -i")
         graficar_cartesiano(b, 0, b)
         graficar_polar(b, 0, b)
+
+   elif case == 7:
+        # Ingresar número complejo y raíz para operación de raíces
+        a = float(input(f"{Fore.YELLOW}Digite la parte real del numero complejo: {Style.RESET_ALL}"))
+        b = float(input(f"{Fore.YELLOW}Digite la parte imaginaria del numero complejo: {Style.RESET_ALL}"))
+        c = int(input(f"{Fore.YELLOW}Ingresa la raiz: {Style.RESET_ALL}"))
+        complejo = complex(a, b)
