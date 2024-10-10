@@ -92,3 +92,17 @@ while repetir:
         print(f"{Fore.RED}Saliendo de la calculadora...")
         repetir = False
     elif case in [1, 2, 3, 4]:
+
+       # Ingresar números complejos para operaciones binarias
+        a = float(input(f"{Fore.YELLOW}Digite la parte real del primer numero complejo: {Style.RESET_ALL}"))
+        b = float(input(f"{Fore.YELLOW}Digite la parte imaginaria del primer numero complejo: {Style.RESET_ALL}"))
+        complejo1 = complex(a, b)
+        print(f"{Fore.GREEN}Numero ingresado: {complejo1}")
+        c = float(input(f"{Fore.YELLOW}Digite la parte real del segundo numero complejo: {Style.RESET_ALL}"))
+        d = float(input(f"{Fore.YELLOW}Digite la parte imaginaria del segundo numero complejo: {Style.RESET_ALL}"))
+        complejo2 = complex(c, d)
+        print(f"{Fore.GREEN}Numero ingresado: {complejo2}")
+        resultado = realizar_operacion(complejo1, complejo2, case)
+        if resultado is not None:
+            print(f"{Fore.GREEN}El resultado es {resultado}")
+            graficar_cartesiano(complejo1, complejo2, resultado)
