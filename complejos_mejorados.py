@@ -153,3 +153,5 @@ while repetir:
                z = cmath.rect(s ** (1 / float(c)), (raiz + 2 * math.pi * contador) / c)
                 print(f"{Fore.GREEN}Forma Polar: MAGNITUD: {abs(z)} ANGULO: {math.degrees(cmath.phase(z))}")
                 print(f"{Fore.GREEN}El resultado es: {z}")
+                graficar_cartesiano(complejo, complejo, z)
+                graficar_polar(complejo, complejo, z)
