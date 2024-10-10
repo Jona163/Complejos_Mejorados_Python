@@ -142,3 +142,11 @@ while repetir:
         b = float(input(f"{Fore.YELLOW}Digite la parte imaginaria del numero complejo: {Style.RESET_ALL}"))
         c = int(input(f"{Fore.YELLOW}Ingresa la raiz: {Style.RESET_ALL}"))
         complejo = complex(a, b)
+
+       if c <= 0:
+            print(f"{Fore.RED}Error: La raiz debe ser un entero positivo.")
+        else:
+            s = abs(complejo)
+            angulo = cmath.phase(complejo)
+            raiz = cmath.phase(complejo ** (1 / float(c)))
+            for contador in range(c):
