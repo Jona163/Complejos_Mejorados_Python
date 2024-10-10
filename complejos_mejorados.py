@@ -155,3 +155,6 @@ while repetir:
                 print(f"{Fore.GREEN}El resultado es: {z}")
                 graficar_cartesiano(complejo, complejo, z)
                 graficar_polar(complejo, complejo, z)
+rep = input(f"{Fore.YELLOW}¿Desea realizar otra operacion? [Si/No]: {Style.RESET_ALL}")
+    if rep.lower() != "si":
+        repetir = False
