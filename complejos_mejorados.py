@@ -76,3 +76,12 @@ def graficar_polar(complejo1, complejo2, resultado):
     ax.legend(loc='upper right')
     ax.set_title("Gráfica polar", fontsize=15, fontname="Times New Roman")  # Modificado el título aquí
     plt.show()
+
+# Bucle principal
+repetir = True
+while repetir:
+    print(f"{Fore.CYAN}**************Calculadora de Numeros Complejos**************")
+    print("Numeros de la forma a+bi")
+    print("Con a como la parte real y b la parte imaginaria")
+    print("************************************************************")
+    menu()
