@@ -65,3 +65,14 @@ def graficar_cartesiano(complejo1, complejo2, resultado):
     plt.title("Gráfica cartesiana", fontsize=15, color='red', fontname="Times New Roman")
     plt.grid(True)
     plt.show()
+
+# Función para graficar números complejos en el plano polar
+def graficar_polar(complejo1, complejo2, resultado):
+    fig, ax = plt.subplots(subplot_kw={'projection': 'polar'})
+    # Graficar operandos y resultado si son distintos
+    if complejo1 != resultado:
+        ax.plot([cmath.phase(complejo1), cmath.phase(complejo2)], [abs(complejo1), abs(complejo2)], 'bo-', label='Operandos')
+    ax.plot([cmath.phase(resultado)], [abs(resultado)], 'ro', label='Resultado')
+    ax.legend(loc='upper right')
+    ax.set_title("Gráfica polar", fontsize=15, fontname="Times New Roman")  # Modificado el título aquí
+    plt.show()
