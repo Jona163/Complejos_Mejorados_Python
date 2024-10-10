@@ -8,3 +8,8 @@ import cmath
 import math
 import matplotlib.pyplot as plt
 from colorama import Fore, Style
+
+import cmath
+import math
+import matplotlib.pyplot as plt
+from colorama import Fore, Style
