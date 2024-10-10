@@ -85,3 +85,10 @@ while repetir:
     print("Con a como la parte real y b la parte imaginaria")
     print("************************************************************")
     menu()
+
+ case = int(input(f"{Fore.YELLOW}Selecciona una operacion: {Style.RESET_ALL}"))
+    if case == 8:
+        # Opción para salir
+        print(f"{Fore.RED}Saliendo de la calculadora...")
+        repetir = False
+    elif case in [1, 2, 3, 4]:
