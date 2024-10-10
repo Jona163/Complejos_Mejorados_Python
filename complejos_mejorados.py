@@ -21,3 +21,19 @@ def menu():
     print(f"{Fore.GREEN}7. RAICES DE NUMEROS COMPLEJOS")
     print(f"{Fore.YELLOW}8. SALIR")
     print(Style.RESET_ALL)
+
+ Función para realizar operaciones entre números complejos
+def realizar_operacion(complejo1, complejo2, operacion):
+    if operacion == 1:
+        resultado = complejo1 + complejo2
+    elif operacion == 2:
+        resultado = complejo1 - complejo2
+    elif operacion == 3:
+        resultado = complejo1 * complejo2
+    elif operacion == 4:
+        # Manejo de división por cero
+        if complejo2 == 0:
+            print(f"{Fore.RED}Error: No se puede dividir por cero.")
+            return None
+        resultado = complejo1 / complejo2
+    return resultado
