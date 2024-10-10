@@ -150,3 +150,6 @@ while repetir:
             angulo = cmath.phase(complejo)
             raiz = cmath.phase(complejo ** (1 / float(c)))
             for contador in range(c):
+               z = cmath.rect(s ** (1 / float(c)), (raiz + 2 * math.pi * contador) / c)
+                print(f"{Fore.GREEN}Forma Polar: MAGNITUD: {abs(z)} ANGULO: {math.degrees(cmath.phase(z))}")
+                print(f"{Fore.GREEN}El resultado es: {z}")
