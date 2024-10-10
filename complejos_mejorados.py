@@ -107,3 +107,15 @@ while repetir:
             print(f"{Fore.GREEN}El resultado es {resultado}")
             graficar_cartesiano(complejo1, complejo2, resultado)
             graficar_polar(complejo1, complejo2, resultado)
+
+ elif case == 5:
+        # Ingresar número complejo y potencia para operación de potencia
+        a = float(input(f"{Fore.YELLOW}Digite la parte real del numero complejo: {Style.RESET_ALL}"))
+        b = float(input(f"{Fore.YELLOW}Digite la parte imaginaria del numero complejo: {Style.RESET_ALL}"))
+        c = float(input(f"{Fore.YELLOW}Ingresa la potencia: {Style.RESET_ALL}"))
+        complejo = complex(a, b)
+        print(f"{Fore.GREEN}Numero ingresado: {complejo}^{c}")
+        resultado = complejo ** c
+        print(f"{Fore.GREEN}El resultado es {resultado}")
+        graficar_cartesiano(complejo, complejo, resultado)
+        graficar_polar(complejo, complejo, resultado)
