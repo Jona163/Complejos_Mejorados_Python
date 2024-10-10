@@ -37,3 +37,14 @@ def realizar_operacion(complejo1, complejo2, operacion):
             return None
         resultado = complejo1 / complejo2
     return resultado
+
+# Función para graficar números complejos en el plano cartesiano
+def graficar_cartesiano(complejo1, complejo2, resultado):
+    fig, ax = plt.subplots()
+    # Graficar operandos y resultado si son distintos
+    if complejo1 != resultado:
+        ax.plot([complejo1.real, complejo2.real], [complejo1.imag, complejo2.imag], 'bo-', label='Operandos')
+        ax.text(complejo1.real, complejo1.imag, f'({complejo1.real}, {complejo1.imag})', fontsize=10, ha='right')
+        ax.text(complejo2.real, complejo2.imag, f'({complejo2.real}, {complejo2.imag})', fontsize=10, ha='right')
+    ax.plot([resultado.real], [resultado.imag], 'ro', label='Resultado')
+    ax.text(resultado.real, resultado.imag, f'({resultado.real}, {resultado.imag})', fontsize=10, ha='right')
